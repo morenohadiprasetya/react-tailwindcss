@@ -1,0 +1,28 @@
+A.Pengertian React
+React adalah library Java script yang digunakan untuk membangun antarmuka
+pengguna (User INTERFACE/UI), terutama pada aplikasi web.
+
+B.Instalasi React 
+1.Menggunakan vite
+  -vite lebih modern daripada Create React App,
+  -pastikan sudah ada Node.js
+  -buat project React dengan Vite
+  -pilih framework;React 
+  -masuk ke folder project 
+  -install depency
+  -jalankan server
+
+C.installasi react-boostrap
+  -npm install react-boostrap
+  -import 'boostrap/dist/css/boostrap.min. css';
+  -npm install react-boostrap boostrap  
+
+D.fungsi react
+  membangun antarmuka
+pengguna (User INTERFACE/UI), terutama pada aplikasi web.
+
+E.kelebihan react
+ -pengembangan antarmuka pengguna (UI) yang efisien melalui penggunaan komponen 
+ yang dapat digunakan kembali 
+ -performa tinggi berkat teknologi Virtual DOM,serta skabilitas untuk menangani 
+  aplikasi yang kompleks 

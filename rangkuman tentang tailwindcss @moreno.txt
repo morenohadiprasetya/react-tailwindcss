@@ -1,0 +1,16 @@
+
+
+Tentang Tailwind CSS 4.0
+ * Versi 4.0 ini jauh lebih cepat, instalasinya gampang, dan udah ada dukungan resmi buat Vite.
+
+Yang Perlu Disiapkan
+ * Pastikan di laptopmu udah terinstal Node.js ! 
+
+Langkah-Langkah Instalasi
+ * Pertama, bikin dulu project React baru pakai command npm create vite@latest.
+ * Terus, ikutin aja panduan instalasi dari dokumentasi resmi Tailwind CSS buat React dengan Vite.
+ * Setelah itu, kamu perlu konfigurasi file vite.config.js sama import Tailwind-nya di file index.css.
+
+Tips Tambahan
+ * Biar kerjaanmu makin gampang, instal extension VS Code kayak Codeium buat auto-complete.
+ 

@@ -30,7 +30,7 @@ function LoginPage() {
                             type="email"
                             name="email"
                             value={formData.email}
-                            onChange={handlechange}
+                            onChange={handleChange}
                             placeholder="Masukan email anda"
                             required
                         />

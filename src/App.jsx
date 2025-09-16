@@ -1,11 +1,14 @@
 import { Routes, Route } from "react-router-dom"
 import Tabeltailwind from "./pages/tabeltailwind"
-import Register from "./pages/register"
+import LandingPage from "./pages/LandingPage"
+import Login from "./pages/Register"
+import Register from "./pages/logi"
 
 const App = () => {
   return (
 <Routes>
-  <Route path="/" element={<Register/>}/>
+  <Route path="/R" element={<Register/>}/>
+  <Route path="/" element={<LandingPage/>}/>
 </Routes>
 
   )

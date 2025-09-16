@@ -10,7 +10,7 @@ const LandingPage = () => {
         <div className="text-center font-bold text-white text-3xl md:text-5xl uppercase mb-10 leading-tight tracking-wider">
           <h1 className="drop-shadow-lg">FORMULIR PENDAFTARAN</h1>
         </div>
-        
+        {/* pppppp */}
         <div className="bg-[#000000] rounded-ful p-4 md:p-5 shadow-xl w-full max-w-sm mb-10 transform -rotate-0">
           <div className="text-center text-[#FFFFFF] font-extrabold text-xl md:text-1xl">
             Pendaftaran SMK Bina Nusantara

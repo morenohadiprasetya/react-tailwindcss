@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const LandingPage = () => {
   return (
     <div className="bg-[#000000] min-h-screen flex flex-col justify-between font-sans">
-      
+      {/* fr5tf */}
       <div className="flex-1 flex flex-col items-center justify-center p-4">
         <div className="text-center font-bold text-white text-3xl md:text-5xl uppercase mb-10 leading-tight tracking-wider">
           <h1 className="drop-shadow-lg">FORMULIR PENDAFTARAN</h1>

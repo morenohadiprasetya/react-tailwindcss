@@ -28,7 +28,7 @@ const LandingPage = () => {
         <div className='2x1 '>
 
           <img src={sekolah} alt="" />
-         <Link to="/R">
+         <Link to="/">
           <button className="px-6 py-3 bg-white text-indigo-600 font-semibold rounded-xl shadow-lg hover:bg-gray-200 transition">
            Daftar
           </button>

@@ -1,13 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-function Login() {
+function LoginPage() {
   const [formData, setFormData] = useState({
-    email: '',
-    password: '',
-    alamatRumah: '',
-    orangtua: '',
-    asalSekolah: '',
+    email: "",
+    password: "",
   });
 
   const handleChange = (e) => {
@@ -16,120 +13,66 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Data Login:', formData);
-    alert('Simulasi login berhasi🙄😂');
+    console.log("Data Login:", formData);
+    alert("Login berhasil ✅ (simulasi)");
   };
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-sm">
-        <h1 className="text-2xl font-bold text-center mb-1">Login</h1>
+        <h1 className="text-2xl font-bold text-center mb-6">Login</h1>
         <form onSubmit={handleSubmit}>
-
           {/* Email */}
           <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
-              Email
+            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+              nama
             </label>
             <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="email"
               type="email"
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="Masukkan email anda"
+              placeholder="Masukkan email"
+              className="mt-1 block w-full border rounded px-3 py-2"
               required
             />
           </div>
 
           {/* Password */}
-          <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
+          <div className="mb-6">
+            <label htmlFor="password" className="block text-sm font-medium text-gray-700">
               Password
             </label>
             <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="password"
               type="password"
               name="password"
               value={formData.password}
               onChange={handleChange}
-              placeholder="Masukkan password"
+              placeholder="Masukkan teks"
+              className="mt-1 block w-full border rounded px-3 py-2"
               required
             />
           </div>
 
-          {/* Alamat Rumah */}
-          <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="alamatRumah">
-              Alamat Rumah
-            </label>
-            <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              id="alamatRumah"
-              type="text"
-              name="alamatRumah"
-              value={formData.alamatRumah}
-              onChange={handleChange}
-              placeholder="Masukkan alamat rumah anda"
-              required
-            />
-          </div>
+          <button
+            type="submit"
+            className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded"
+          >
+            Masuk
+          </button>
 
-          {/* Nama Orang Tua */}
-          <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="orangtua">
-              Nama Orang Tua
-            </label>
-            <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              id="orangtua"
-              type="text"
-              name="orangtua"
-              value={formData.orangtua}
-              onChange={handleChange}
-              placeholder="Masukkan nama orang tua"
-              required
-            />
-          </div>
-
-          {/* Asal Sekolah */}
-          <div className="mb-6">
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="asalSekolah">
-              Asal Sekolah
-            </label>
-            <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              id="asalSekolah"
-              type="text"
-              name="asalSekolah"
-              value={formData.asalSekolah}
-              onChange={handleChange}
-              placeholder="Masukkan asal sekolah"
-              required
-            />
-          </div>
-
-          {/* Tombol & Link */}
-          <div className="flex items-center justify-between">
-            <button
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-              type="submit"
-            >
-              Masuk
-            </button>
-            <Link
-              to="/Register"
-              className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
-            >
-              Belum punya akun? Daftar
+          <p className="text-center text-sm mt-4">
+            Belum punya akun?{" "}
+            <Link to="/LandingPage" className="text-blue-500 hover:underline">
+              Daftar
             </Link>
-          </div>
+          </p>
         </form>
       </div>
     </div>
   );
 }
 
-export default Login;
+export default LoginPage;

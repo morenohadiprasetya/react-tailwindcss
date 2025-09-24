@@ -1,18 +1,16 @@
-import { Routes, Route } from "react-router-dom"
-import Tabeltailwind from "./pages/tabeltailwind"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-
-import TabelData from "./Component/TabelData"
-
-
-import Tambahdata from "./Component/Tambahdata"
-const App = () => {
+import TabelData from "./Component/TabelData";
+import TambahData from "./Component/Tambahdata"
+import EditData from "./Component/EditData";
+function App() {
   return (
     <Routes>
-      
-      <Route path="/" element={<Tambahdata/>}/>
-    </Routes>
 
-  )
+      <Route path="/" element={<TambahData />} />
+      <Route path="/tabeldata" element={<TabelData />} />
+    </Routes>
+  );
 }
-export default App
+
+export default App;

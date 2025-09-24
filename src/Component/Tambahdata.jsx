@@ -3,45 +3,46 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 function Tambahdata () {
-    const [formData, setFormData] = useState({
-        makanan:'',
-        pesanan: '',
-        harga: '',
+   const [formData, setFormData] = useState({
+    makanan: "",
+    paket: "",
+    harga: 0,
+  });
+
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    try {
+      // kirim data ke backend
+      const response = await axios.post("http://localhost:5000/menu", formData);
+
+      console.log("Respon server:", response.data);
+      alert("Data berhasil ditambahkan!");
+
+      // Reset form
+      setFormData({
+        makanan: "",
+        paket: "",
+        harga: "",
       });
 
-       const [loading, setLoading] = useState(true);
-       const Navigate = useNavigate();
-    
-      const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-      };
-    
- const handleSubmit = async (e) => {
-  e.preventDefault();
-  setLoading(true);
-  try {
-    const response = await axios.post("http://localhost:5000/menu", formData);
-
-    console.log('Respon server:', response.data);
-    alert('Pesanan berhasil!');
-
-    setFormData({
-      makanan: "",
-      pesanan: "",
-      harga: ""
-    });
-
-    Navigate("/Tabeldata"); // setelah daftar, arahkan ke login
-  } catch (error) {
-    console.error("Error saat menambahkan data:", error);
-    alert("Gagal menambahkan data.");
-  } finally {
-    setLoading(false);
-  }
-};
-
-  
+      // opsional: otomatis kembali ke tabel setelah sukses
+      navigate("/tabeldata");
+    } catch (error) {
+      console.error("Error saat menambahkan data:", error);
+      alert("Gagal menambahkan data!");
+    } finally {
+      setLoading(false);
+    }
+  };
   return (
+    
     <div className="flex justify-center items-start min-h-screen">
       <div className="mr-12 bg-white p-8 rounded-lg shadow-2xl w-full max-w-sm">
         <h1 className="text-2xl font-bold text-center mb-6">Pesan Makanan</h1>
@@ -66,10 +67,10 @@ function Tambahdata () {
                     Pesanan
                     </label>
                     <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    id="pesanan"
+                    id="paket"
                     type="text"
-                    name="pesanan"
-                    value={formData.pesanan}
+                    name="paket"
+                    value={formData.paket}
                     onChange={handleChange}
                     placeholder=""
                     required
@@ -81,7 +82,7 @@ function Tambahdata () {
                     </label>
                     <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     id="harga"
-                    type="text"
+                    type="number"
                     name="harga"
                     value={formData.harga}
                     onChange={handleChange}

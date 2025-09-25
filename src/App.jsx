@@ -1,14 +1,15 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import TabelData from "./Component/TabelData";
 import TambahData from "./Component/Tambahdata"
-import EditData from "./Component/EditData";
+import Sidnav from "./Component/sidnav";
 function App() {
   return (
     <Routes>
-
-      <Route path="/" element={<TambahData />} />
+    
+      <Route path="/mbud" element={<TambahData />} />
       <Route path="/tabeldata" element={<TabelData />} />
+<Route path="sidnav" element={<Sidnav />} />
     </Routes>
   );
 }

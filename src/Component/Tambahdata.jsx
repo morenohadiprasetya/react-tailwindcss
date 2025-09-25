@@ -6,7 +6,7 @@ function Tambahdata () {
    const [formData, setFormData] = useState({
     makanan: "",
     paket: "",
-    harga: 0,
+    harga: "",
   });
 
   const [loading, setLoading] = useState(false);

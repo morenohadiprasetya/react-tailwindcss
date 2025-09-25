@@ -1,22 +1,64 @@
 {
   "menu": [
     {
-      "id": "f2d1",
-      "makanan": "df",
-      "paket": "sdfgfdg",
-      "harga": "03453"
+      "id": 1,
+      "makanan": "Nasi Goreng",
+      "paket": "Ayam + Teh",
+      "harga": 15000
     },
     {
-      "id": "8de3",
-      "makanan": "ambasgor goreng",
+      "id": 2,
+      "makanan": "Mie Ayam",
+      "paket": "Bakso + Es Jeruk",
+      "harga": 12000
+    },
+    {
+      "id": "0857",
+      "nama_makanan": "asu goreng",
+      "pesanan": "969",
+      "total_harga": "777"
+    },
+    {
+      "id": "ff34",
+      "nama_makanan": "asu goreng",
+      "pesanan": "969",
+      "total_harga": "777"
+    },
+    {
+      "id": "ef2c",
+      "nama_makanan": "asu goreng",
+      "pesanan": "969",
+      "total_harga": "777"
+    },
+    {
+      "id": "f787",
+      "nama_makanan": "tyy",
+      "pesanan": "969",
+      "total_harga": "4454654654546"
+    },
+    {
+      "id": "90c7",
+      "nama_makanan": "asu goreng",
+      "pesanan": "2",
+      "total_harga": "7777"
+    },
+    {
+      "id": "6b9f",
+      "makanan": "kontole fadil",
       "paket": "969",
-      "harga": "77777"
+      "harga": "888"
     },
     {
-      "id": "9537",
-      "makanan": "fdgyrteefec",
-      "paket": " egre grere",
-      "harga": "7777"
+      "id": "5cee",
+      "makanan": "22",
+      "pesanan": "22",
+      "harga": "22"
+    },
+    {
+      "id": "aff0",
+      "makanan": "kontole fadil",
+      "paket": "969",
+      "harga": "888"
     }
   ]
 }

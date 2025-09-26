@@ -17,7 +17,7 @@ const LandingPage = () => {
               <div className="text-center text-[#FFFFFF] font-extrabold text-xl md:text-3xl">
           <p className="text-center text-[#FFFFFF] font-extrabold text-xl md:text-3xl">Registration Info:</p>
           <div className="text-center text-[#FFFFFF] font-extrabold text-xl md:text-3xl">
-            <span className="font-bold">+62 838-7729-0876</span>
+           
           </div>
           </div>
           </div>
@@ -28,7 +28,7 @@ const LandingPage = () => {
         <div className='2x1 '>
 
           <img src={sekolah} alt="" />
-         <Link to="/">
+         <Link to="/Register">
           <button className="px-6 py-3 bg-white text-indigo-600 font-semibold rounded-xl shadow-lg hover:bg-gray-200 transition">
            Daftar
           </button>

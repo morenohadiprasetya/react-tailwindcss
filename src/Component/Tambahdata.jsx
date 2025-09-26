@@ -45,11 +45,11 @@ function Tambahdata () {
     
     <div className="flex justify-center items-start min-h-screen">
       <div className="mr-12 bg-white p-8 rounded-lg shadow-2xl w-full max-w-sm">
-        <h1 className="text-2xl font-bold text-center mb-6">Pesan Makanan</h1>
+        <h1 className="text-2xl font-bold text-center mb-6">Pesan barang keinginanmu</h1>
         <form onSubmit={handleSubmit}>
             <div className="mb-4">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="Nama">
-                    Makanan
+                    Barang
                 </label>
                 <input 
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
@@ -95,7 +95,7 @@ function Tambahdata () {
                 Pesan
               </button>
             <Link
-              to="/l"
+              to="/sidnav"
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mb-4"
             >
               Kembali

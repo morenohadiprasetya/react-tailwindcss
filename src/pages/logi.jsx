@@ -67,6 +67,11 @@ function Login() {
           Login
         </button>
       </form>
+       <Link to="/sidnav">
+          <button className="px-6 py-3 bg-white text-indigo-600 font-semibold rounded-xl shadow-lg hover:bg-gray-200 transition">
+           Daftar
+          </button>
+          </Link>
     </div>
   );
 }

@@ -13,7 +13,7 @@ function Sidnav () {
                 <nav className="space-y-3">
                     <a href="/mbud" className="block py-2 px-3 rounded hover:bg-blue-600">Dashboard</a>
                     <a href="/Tabeldata" className="block py-2 px-3 rounded hover:bg-blue-600">masukkanteks</a>
-                    <a href="" className="block py-2 px-3 rounded hover:bg-blue-600">isisendiri</a>
+                    <a href="" className="block py-2 px-3 rounded hover:bg-blue-600 mt-110">isisendiri</a>
                 </nav>
 
                 <div className=""></div>

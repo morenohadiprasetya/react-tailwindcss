@@ -21,10 +21,21 @@ function RegisterPage() {
       alert("Password tidak sama!");
       return;
     }
-    console.log("Data Registrasi:", formData);
-    alert("Registrasi berhasil ✅ (simulasi)");
-  };
+    if (res.data.length > 0) {
+Swal.fire({
+  
+  title: "Drag me!",
+  icon: "success",
+  draggable: true
+});
 
+    }
+     
+
+  };
+<Link to="/sidnav" className="text-blue-500 hover:underline">
+              Login
+            </Link>
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-sm">
@@ -120,9 +131,7 @@ function RegisterPage() {
 
           <p className="text-center text-sm mt-4">
             Sudah punya akun?{" "}
-            <Link to="/login" className="text-blue-500 hover:underline">
-              Login
-            </Link>
+           
           </p>
         </form>
       </div>

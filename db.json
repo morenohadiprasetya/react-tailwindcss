@@ -1,10 +1,28 @@
 {
   "menu": [
     {
-      "id": "666e",
-      "makanan": "amburger",
-      "paket": "123",
-      "harga": "969.00"
+      "id": "50df",
+      "makanan": "andre",
+      "paket": "1 jam",
+      "harga": "200000"
+    },
+    {
+      "id": "23e2",
+      "makanan": "andre",
+      "paket": "1 jam",
+      "harga": "200000"
+    },
+    {
+      "id": "533a",
+      "makanan": "andre",
+      "paket": "1 jam",
+      "harga": "200000"
+    },
+    {
+      "id": "bbf4",
+      "makanan": "andre",
+      "paket": "1 jam",
+      "harga": "200000"
     }
   ]
 }

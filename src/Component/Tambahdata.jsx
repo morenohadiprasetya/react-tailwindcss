@@ -22,9 +22,13 @@ function Tambahdata () {
       // kirim data ke backend
       const response = await axios.post("http://localhost:5000/menu", formData);
 
-      console.log("Respon server:", response.data);
-      alert("Data berhasil ditambahkan!");
-
+      Swal.fire({
+  position: "top-end",
+  icon: "success",
+  title: "Your work has been saved",
+  showConfirmButton: false,
+  timer: 1500
+});
       // Reset form
       setFormData({
         makanan: "",

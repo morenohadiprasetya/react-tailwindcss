@@ -47,12 +47,16 @@ function Tabeldata() {
         >
           Kembali
         </Link>
- <Link
-          to="/EditData"
-          className="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-        >
+        <div className="flex justify-end mr-1200 ml-22">
+
+        <Link
+          to="/Edit/969"
+          className=" inline-block mt-1 bg-blue-500 text-white px-4 py-2 rounded "
+          
+          >
           Edit Pesanan
         </Link>
+          </div>
 
       </div>
     </div>
